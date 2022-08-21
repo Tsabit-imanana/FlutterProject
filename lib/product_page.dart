@@ -41,7 +41,7 @@ class _productPageState extends State<productPage> {
           ),
         ),
         Container(
-          height: 20,
+          height: 10,
         ),
         Container(
           width: MediaQuery.of(context).size.width - 40,
@@ -70,7 +70,7 @@ class _productPageState extends State<productPage> {
               children: [
                 SizedBox(
                   width: MediaQuery.of(context).size.width - 40,
-                  height: 400,
+                  height: 370,
                   child: ListView(
                     children: [
                       buildCategories(),

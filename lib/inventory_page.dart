@@ -17,8 +17,8 @@ class _inventoryPageState extends State<inventoryPage> {
       child: GridView.count(
         primary: false,
         padding: const EdgeInsets.all(20),
-        crossAxisSpacing: 38,
-        mainAxisSpacing: 18,
+        crossAxisSpacing: 15,
+        mainAxisSpacing: 10,
         crossAxisCount: 3,
         children: <Widget>[
           buildIconInventory("Inventory Ratio", "inventory-ratio", 6, 12.5),
@@ -28,7 +28,8 @@ class _inventoryPageState extends State<inventoryPage> {
           buildIconInventory(
               "Inventory Coast & Price List", "inventory-coast", 7, 11),
           buildIconInventory("Safety Stock Info", "safety-stock-info", 7, 11),
-          buildIconInventory("Item Age Compositing   Value", "item-age", 5, 10),
+          buildIconInventory(
+              "Item Age Compositing   Value", "item-age", 4.5, 10),
           buildIconInventory(
               "Inventory Recalculated", "inv-recalculated", 7, 11),
           buildIconInventory("Report Of Inventory Valuation",
@@ -42,7 +43,7 @@ class _inventoryPageState extends State<inventoryPage> {
           buildIconInventory(
               "Report inventory Transfer", "report-inventory-transfer", 7, 10),
           buildIconInventory(
-              "Report Warehouse Transfer", "report-warehouse-transfer", 6, 10),
+              "Report Warehouse Transfer", "report-warehouse-transfer", 5, 9.5),
           buildIconInventory(
               "Report Inventory Reclass", "report-inventory-reclass", 7, 10),
           buildIconInventory("Report Pending Transaction",

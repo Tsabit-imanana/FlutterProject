@@ -18,8 +18,8 @@ class _tradingState extends State<trading> {
       child: GridView.count(
         primary: false,
         padding: const EdgeInsets.all(20),
-        crossAxisSpacing: 38,
-        mainAxisSpacing: 18,
+        crossAxisSpacing: 15,
+        mainAxisSpacing: 10,
         crossAxisCount: 3,
         children: <Widget>[
           buildIconTrading("monthly transaction", "m-transaction", 5),
@@ -32,7 +32,7 @@ class _tradingState extends State<trading> {
           buildIconTrading(
               "Top 20 declined product", "top-20-declined-product", 8),
           buildIconTrading(
-              "Sales order oustanding Recap", "sales-order-outstanding", 5),
+              "Sales order oustanding Recap", "sales-order-outstanding", 0),
           buildIconTrading("Sales forecast VS reality", "sale-forecast", 9),
           buildIconTrading("Top 20 sales return", "top-20-sales-return", 8),
           buildIconTrading(
@@ -58,7 +58,7 @@ class _tradingState extends State<trading> {
         child: Column(
           children: [
             Container(
-              height: 45,
+              height: 43,
               decoration: BoxDecoration(
                 image: DecorationImage(
                   alignment: Alignment(0, -0.45),

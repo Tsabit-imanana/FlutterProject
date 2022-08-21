@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/rendering.dart';
 import 'package:project/home_menu/credit_limit.dart';
 import 'package:project/home_menu/m_transaction.dart';
 
@@ -7,6 +8,8 @@ class homeTest extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    double fixSize = 100;
+
     return Stack(
       children: [
         Container(
@@ -19,7 +22,7 @@ class homeTest extends StatelessWidget {
               Stack(
                 children: [
                   SizedBox(
-                    width: 358.0,
+                    width: MediaQuery.of(context).size.width,
                     height: 187.0,
                     child: DecoratedBox(
                       decoration: BoxDecoration(
@@ -83,7 +86,7 @@ class homeTest extends StatelessWidget {
             children: [
               Container(
                 height: 57,
-                width: 321,
+                width: MediaQuery.of(context).size.width - 40,
                 decoration: BoxDecoration(
                   color: Color(0xFFC5F1FF),
                   borderRadius: BorderRadius.all(Radius.circular(12)),
@@ -215,12 +218,12 @@ class homeTest extends StatelessWidget {
               );
             },
             child: Container(
-              height: 110,
-              width: 110,
+              height: 100,
+              width: 100,
               decoration: BoxDecoration(
                 image: DecorationImage(
                   alignment: Alignment(0, -0.45),
-                  scale: 0.75,
+                  scale: 1,
                   image: AssetImage('assets/homeAsset/credit_limit.png'),
                 ),
                 color: Color(0xFFA7E2F4),
@@ -233,7 +236,7 @@ class homeTest extends StatelessWidget {
                   "Credit Limit",
                   style: TextStyle(
                     fontWeight: FontWeight.bold,
-                    fontSize: 16,
+                    fontSize: 13,
                   ),
                 ),
               ),
@@ -252,12 +255,12 @@ class homeTest extends StatelessWidget {
               );
             },
             child: Container(
-              height: 110,
-              width: 110,
+              height: fixSize,
+              width: fixSize,
               decoration: BoxDecoration(
                 image: DecorationImage(
                   alignment: Alignment(0.3, -0.7),
-                  scale: 0.9,
+                  scale: 1,
                   image: AssetImage('assets/homeAsset/m_transaction.png'),
                 ),
                 color: Color(0xFFA7E2F4),
@@ -270,7 +273,7 @@ class homeTest extends StatelessWidget {
                   textAlign: TextAlign.center,
                   style: new TextStyle(
                     fontWeight: FontWeight.bold,
-                    height: 1,
+                    fontSize: 13,
                   ),
                 ),
               ),
@@ -280,12 +283,12 @@ class homeTest extends StatelessWidget {
         Align(
           alignment: Alignment(0.85, -0.05),
           child: Container(
-            height: 110,
-            width: 110,
+            height: fixSize,
+            width: fixSize,
             decoration: BoxDecoration(
               image: DecorationImage(
                 alignment: Alignment(0.3, -0.75),
-                scale: 0.8,
+                scale: 1,
                 image: AssetImage('assets/homeAsset/y_transaction.png'),
               ),
               color: Color(0xFFA7E2F4),
@@ -298,7 +301,7 @@ class homeTest extends StatelessWidget {
                 textAlign: TextAlign.center,
                 style: new TextStyle(
                   fontWeight: FontWeight.bold,
-                  height: 1,
+                  fontSize: 13,
                 ),
               ),
             ),
@@ -307,12 +310,12 @@ class homeTest extends StatelessWidget {
         Align(
           alignment: Alignment(-0.85, 0.40),
           child: Container(
-            height: 110,
-            width: 110,
+            height: fixSize,
+            width: fixSize,
             decoration: BoxDecoration(
               image: DecorationImage(
                 alignment: Alignment(0, -0.7),
-                scale: 0.8,
+                scale: 1,
                 image: AssetImage('assets/homeAsset/point_and_deposit.png'),
               ),
               color: Color(0xFFA7E2F4),
@@ -325,7 +328,7 @@ class homeTest extends StatelessWidget {
                 textAlign: TextAlign.center,
                 style: new TextStyle(
                   fontWeight: FontWeight.bold,
-                  height: 1,
+                  fontSize: 13,
                 ),
               ),
             ),
@@ -334,12 +337,12 @@ class homeTest extends StatelessWidget {
         Align(
           alignment: Alignment(0.0, 0.40),
           child: Container(
-            height: 110,
-            width: 110,
+            height: fixSize,
+            width: fixSize,
             decoration: BoxDecoration(
               image: DecorationImage(
                 alignment: Alignment(0.3, -0.45),
-                scale: 0.95,
+                scale: 1,
                 image: AssetImage('assets/homeAsset/barcode.png'),
               ),
               color: Color(0xFFA7E2F4),
@@ -352,7 +355,7 @@ class homeTest extends StatelessWidget {
                 textAlign: TextAlign.center,
                 style: new TextStyle(
                   fontWeight: FontWeight.bold,
-                  height: 1,
+                  fontSize: 13,
                 ),
               ),
             ),
@@ -361,12 +364,12 @@ class homeTest extends StatelessWidget {
         Align(
           alignment: Alignment(0.85, 0.40),
           child: Container(
-            height: 110,
-            width: 110,
+            height: fixSize,
+            width: fixSize,
             decoration: BoxDecoration(
               image: DecorationImage(
                 alignment: Alignment(0.3, -0.55),
-                scale: 0.85,
+                scale: 1,
                 image: AssetImage('assets/homeAsset/top_amount.png'),
               ),
               color: Color(0xFFA7E2F4),
@@ -379,7 +382,7 @@ class homeTest extends StatelessWidget {
                 textAlign: TextAlign.center,
                 style: new TextStyle(
                   fontWeight: FontWeight.bold,
-                  height: 1,
+                  fontSize: 13,
                 ),
               ),
             ),
@@ -388,8 +391,8 @@ class homeTest extends StatelessWidget {
         Align(
           alignment: Alignment(-0.85, 0.85),
           child: Container(
-            height: 110,
-            width: 110,
+            height: fixSize,
+            width: fixSize,
             decoration: BoxDecoration(
               image: DecorationImage(
                 alignment: Alignment(0.1, -0.45),
@@ -406,7 +409,7 @@ class homeTest extends StatelessWidget {
                 textAlign: TextAlign.center,
                 style: new TextStyle(
                   fontWeight: FontWeight.bold,
-                  height: 1,
+                  fontSize: 13,
                 ),
               ),
             ),
@@ -415,8 +418,8 @@ class homeTest extends StatelessWidget {
         Align(
           alignment: Alignment(0.0, 0.85),
           child: Container(
-            height: 110,
-            width: 110,
+            height: fixSize,
+            width: fixSize,
             decoration: BoxDecoration(
               image: DecorationImage(
                 alignment: Alignment(0, -0.5),
@@ -434,7 +437,7 @@ class homeTest extends StatelessWidget {
                 style: new TextStyle(
                   fontWeight: FontWeight.bold,
                   height: 1,
-                  fontSize: 13,
+                  fontSize: 11,
                 ),
               ),
             ),
@@ -443,26 +446,25 @@ class homeTest extends StatelessWidget {
         Align(
           alignment: Alignment(0.85, 0.85),
           child: Container(
-            height: 110,
-            width: 110,
+            height: fixSize,
+            width: fixSize,
             decoration: BoxDecoration(
               image: DecorationImage(
-                alignment: Alignment(0, -0.45),
-                scale: 0.85,
+                alignment: Alignment(0, -0.55),
+                scale: 1,
                 image: AssetImage('assets/homeAsset/sales_order.png'),
               ),
               color: Color(0xFFA7E2F4),
               borderRadius: BorderRadius.all(Radius.circular(25)),
             ),
             child: Container(
-              alignment: Alignment(0, 0.85),
+              alignment: Alignment(0, 0.7),
               child: Text(
                 "Sales Order inquiry (By user)",
                 textAlign: TextAlign.center,
                 style: new TextStyle(
                   fontWeight: FontWeight.bold,
-                  height: 1,
-                  fontSize: 13.5,
+                  fontSize: 12.5,
                 ),
               ),
             ),

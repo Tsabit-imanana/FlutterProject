@@ -17,7 +17,7 @@ class _financePageState extends State<financePage> {
       child: GridView.count(
         primary: false,
         padding: const EdgeInsets.all(20),
-        crossAxisSpacing: 38,
+        crossAxisSpacing: 15,
         mainAxisSpacing: 18,
         crossAxisCount: 3,
         children: <Widget>[

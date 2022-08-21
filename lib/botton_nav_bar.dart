@@ -56,7 +56,7 @@ class _BottomNavState extends State<BottomNav> {
           });
         },
         child: Container(
-          height: 85,
+          height: 70,
           decoration: BoxDecoration(
               color: _selectedItemIndex == index ? Colors.blue : DefaultColor),
           child: Stack(
@@ -65,7 +65,7 @@ class _BottomNavState extends State<BottomNav> {
                 width: MediaQuery.of(context).size.width / 6,
                 child: Image.asset(
                   "assets/images/" + name + ".png",
-                  scale: scale,
+                  scale: scale + 20,
                 ),
               ),
               Container(
@@ -73,7 +73,7 @@ class _BottomNavState extends State<BottomNav> {
                 alignment: Alignment(0, 0.65),
                 child: Text(
                   name,
-                  style: TextStyle(fontWeight: FontWeight.bold, fontSize: 14),
+                  style: TextStyle(fontWeight: FontWeight.bold, fontSize: 10),
                 ),
               ),
             ],
